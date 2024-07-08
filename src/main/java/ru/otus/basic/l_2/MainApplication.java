@@ -4,6 +4,7 @@ public class MainApplication {
     public static void main(String[] args) {
 //        System.out.println("Hello World!");
         drawSquare();
+        feature1Method();
         feature2Method();
     }
 
@@ -12,6 +13,13 @@ public class MainApplication {
         System.out.println("-  -");
         System.out.println("-  -");
         System.out.println("----");
+    }
+
+    public static void feature1Method() {
+        System.out.println("1234");
+        int n = 10;
+        n++;
+        System.out.println(n);
     }
 
     public static void feature2Method() {
