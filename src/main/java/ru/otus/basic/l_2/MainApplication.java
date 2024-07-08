@@ -12,4 +12,8 @@ public class MainApplication {
         System.out.println("-  -");
         System.out.println("----");
     }
+
+    public static void feature2Method() {
+        System.out.println("AI started");
+    }
 }
