@@ -7,7 +7,7 @@ public class Pdf {
 //        arithmetics();
 //        printHelloThreeTimes();
 //        sumAndPrint();
-        ifCondition();
+        ifExample();
     }
 
     public static void helloWorld() {
@@ -43,6 +43,9 @@ public class Pdf {
 
         val /= 10;
         System.out.println(val);
+
+        val = 1000;
+        System.out.println(val);
     }
 
     public static void printHelloThreeTimes() {
@@ -58,25 +61,25 @@ public class Pdf {
         System.out.println("sum: " + sum);
     }
 
-    public static void ifCondition() {
+    public static void ifExample() {
         int a = 10;
         int b = 20;
         int sum = a + b;
 
         if (a > 10) {
-            System.out.println("the value of the variable a is strictly greater than 10");
+            System.out.println("The value of the variable a is strictly greater than 10");
         }
 
         if (a != 10) {
-            System.out.println("the value of variable a is not equal to 10");
+            System.out.println("The value of variable a is not equal to 10");
         }
 
         if (sum >= 0) {
-            System.out.println("the sum of a and b is greater than or equal to 0");
+            System.out.println("The sum of a and b is greater than or equal to 0");
         }
 
         if (a == b) {
-            System.out.println("the value of variable a is equal to the value of variable b");
+            System.out.println("The value of variable a is equal to the value of variable b");
         }
     }
 }
