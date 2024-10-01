@@ -2,7 +2,7 @@ package ru.otus.basic.l_19;
 
 import java.io.*;
 import java.nio.charset.StandardCharsets;
-import java.util.Arrays;;
+import java.util.Arrays;
 
 public class App {
     public static void main(String[] args) {
@@ -154,7 +154,7 @@ public class App {
     }
 
     public static void fileApi1() {
-        File file = new File("res/l_19/demo.txt");
+        File file = new File("resources/l_19/demo.txt");
         System.out.println(file.exists());
         System.out.println(file.length());
         System.out.println(file.getName());
@@ -168,7 +168,7 @@ public class App {
         System.out.println(file.isHidden());
         System.out.println();
 
-//        File file2 = new File("res/l_19/demo_cp.txt");
+//        File file2 = new File("src/main/resources/l_19/demo_cp.txt");
 //        boolean result = file.renameTo(file2);
 //        System.out.println(result);
 
@@ -178,13 +178,13 @@ public class App {
     }
 
     public static void fileApi2() {
-        File file = new File("res/l_19/");
+        File file = new File("src/main/resources/l_19/");
         System.out.println(file.isDirectory());
         System.out.println(Arrays.toString(file.listFiles()));
         System.out.println(Arrays.toString(file.listFiles(File::isFile)));
         System.out.println();
 
-        File file2 = new File("res/l_19/sub_1/sub_2");
+        File file2 = new File("src/main/resources/l_19/sub_1/sub_2");
         boolean result = file2.mkdir();
         System.out.println(result); // false
         boolean result2 = file2.mkdirs();
@@ -192,7 +192,7 @@ public class App {
     }
 
     public static void fileApi3() {
-        File file = new File("res/l_19/");
+        File file = new File("src/main/resources/l_19/");
         System.out.println(file.getTotalSpace());
         System.out.println(file.getFreeSpace());
         System.out.println(file.getUsableSpace());
